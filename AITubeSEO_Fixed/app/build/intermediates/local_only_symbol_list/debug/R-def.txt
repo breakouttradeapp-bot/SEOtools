@@ -72,7 +72,6 @@ id etTopic
 id loadingDots
 id loadingLayout
 id lottieAnim
-id lottieLoading
 id recyclerHistory
 id recyclerTitles
 id tilTopic

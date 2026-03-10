@@ -27,14 +27,13 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         startAnimations()
         splashHandler.postDelayed(navigateRunnable, 3000)
     }
 
     private fun startAnimations() {
         try {
-            // Lottie logo — zoom in + fade in
+            // Logo icon: zoom in + fade in
             binding.lottieAnim.scaleX = 0.5f
             binding.lottieAnim.scaleY = 0.5f
             binding.lottieAnim.alpha = 0f
@@ -47,20 +46,20 @@ class SplashActivity : AppCompatActivity() {
             binding.tvAppTitle.animate()
                 .alpha(1f).setStartDelay(900).setDuration(600).start()
 
-            // Tagline slide up + fade in
+            // Tagline slide up
             binding.tvTagline.alpha = 0f
             binding.tvTagline.translationY = 40f
             binding.tvTagline.animate()
                 .alpha(1f).translationY(0f)
                 .setStartDelay(1400).setDuration(600).start()
 
-            // Version / powered by fade in
+            // Version text fade in
             binding.tvVersion.alpha = 0f
             binding.tvVersion.animate()
                 .alpha(1f).setStartDelay(1900).setDuration(500).start()
 
         } catch (e: Exception) {
-            // Animation failures must never crash the splash
+            // Animation failure must never crash the splash screen
         }
     }
 

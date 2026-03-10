@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.aitube.seogenerator.app-mergeDebugResources-47:/values-ur/values-ur.xml",
+            "outputFile": "com.aitube.seogenerator.app-mergeDebugResources-46:/values-ur/values-ur.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-4/a09928384ec1935e808ab75bc8da5541/transformed/core-1.12.0/res/values-ur/values-ur.xml",

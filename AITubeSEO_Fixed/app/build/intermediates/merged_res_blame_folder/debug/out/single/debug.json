@@ -1,138 +1,106 @@
 [
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_shorts_toolbar_gradient.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/shorts_toolbar_gradient.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/menu_main_menu.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/menu/main_menu.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/xml_network_security_config.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/xml/network_security_config.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_history.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_history.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/raw_loading_ai.json.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/raw/loading_ai.json"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_toolbar_gradient.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/toolbar_gradient.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-hdpi_ic_launcher.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-hdpi/ic_launcher.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/xml_network_security_config.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/xml/network_security_config.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_circle_accent.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/circle_accent.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_btn_shorts_gradient.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/btn_shorts_gradient.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_shorts_result.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_shorts_result.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_number_badge.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/number_badge.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_ic_launcher_fg.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/ic_launcher_fg.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_shorts_result.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_shorts_result.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_seo_result.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_seo_result.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_number_badge.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/number_badge.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_card_border.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/card_border.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_splash_gradient.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/splash_gradient.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xxhdpi/ic_launcher_round.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_circle_pulse.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/circle_pulse.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xxxhdpi_ic_launcher.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xxxhdpi/ic_launcher.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_seo_result.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_seo_result.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_circle_pulse.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/circle_pulse.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_item_shorts_title.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/item_shorts_title.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xxxhdpi/ic_launcher_round.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/raw_loading_ai.json.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/raw/loading_ai.json"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_item_history.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/item_history.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_splash.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_splash.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-mdpi_ic_launcher.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-mdpi/ic_launcher.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_main.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_main.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_history.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_history.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_shorts_toolbar_gradient.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/shorts_toolbar_gradient.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_item_shorts_title.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/item_shorts_title.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_hero_card_bg.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/hero_card_bg.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_hero_card_bg.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/hero_card_bg.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_activity_privacy_policy.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/activity_privacy_policy.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_ripple_red.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/ripple_red.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_btn_red_gradient.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/btn_red_gradient.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_btn_shorts_gradient.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/btn_shorts_gradient.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_loading_bg.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/loading_bg.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-hdpi_ic_launcher_round.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-hdpi/ic_launcher_round.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/layout_item_history.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/layout/item_history.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xxhdpi_ic_launcher.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xxhdpi/ic_launcher.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_ripple_red.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/ripple_red.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_privacy_policy.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_privacy_policy.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_circle_accent.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/circle_accent.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xhdpi_ic_launcher_round.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xhdpi/ic_launcher_round.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_ic_launcher_fg.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/ic_launcher_fg.xml"
     },
     {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_btn_red_gradient.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/btn_red_gradient.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_toolbar_gradient.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/toolbar_gradient.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-mdpi_ic_launcher_round.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-mdpi/ic_launcher_round.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/mipmap-xhdpi_ic_launcher.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/mipmap-xhdpi/ic_launcher.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/menu_main_menu.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/menu/main_menu.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_splash.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_splash.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/layout_activity_main.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_splash_gradient.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/splash_gradient.xml"
-    },
-    {
-        "merged": "com.aitube.seogenerator.app-merged_res-49:/drawable_loading_bg.xml.flat",
-        "source": "com.aitube.seogenerator.app-main-51:/drawable/loading_bg.xml"
+        "merged": "com.aitube.seogenerator.app-merged_res-48:/drawable_card_border.xml.flat",
+        "source": "com.aitube.seogenerator.app-main-50:/drawable/card_border.xml"
     }
 ]

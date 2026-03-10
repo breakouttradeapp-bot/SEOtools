@@ -5,13 +5,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.airbnb.lottie.LottieAnimationView;
 import com.aitube.seogenerator.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -25,7 +25,7 @@ public final class ActivitySplashBinding implements ViewBinding {
   public final ProgressBar loadingDots;
 
   @NonNull
-  public final LottieAnimationView lottieAnim;
+  public final ImageView lottieAnim;
 
   @NonNull
   public final TextView tvAppTitle;
@@ -37,8 +37,8 @@ public final class ActivitySplashBinding implements ViewBinding {
   public final TextView tvVersion;
 
   private ActivitySplashBinding(@NonNull FrameLayout rootView, @NonNull ProgressBar loadingDots,
-      @NonNull LottieAnimationView lottieAnim, @NonNull TextView tvAppTitle,
-      @NonNull TextView tvTagline, @NonNull TextView tvVersion) {
+      @NonNull ImageView lottieAnim, @NonNull TextView tvAppTitle, @NonNull TextView tvTagline,
+      @NonNull TextView tvVersion) {
     this.rootView = rootView;
     this.loadingDots = loadingDots;
     this.lottieAnim = lottieAnim;
@@ -81,7 +81,7 @@ public final class ActivitySplashBinding implements ViewBinding {
       }
 
       id = R.id.lottieAnim;
-      LottieAnimationView lottieAnim = ViewBindings.findChildViewById(rootView, id);
+      ImageView lottieAnim = ViewBindings.findChildViewById(rootView, id);
       if (lottieAnim == null) {
         break missingId;
       }

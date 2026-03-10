@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.aitube.seogenerator.app-mergeDebugResources-47:/values-sv/values-sv.xml",
+            "outputFile": "com.aitube.seogenerator.app-mergeDebugResources-46:/values-sv/values-sv.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/transforms-4/74fbdf24f38910ce8e99df8ac91ce56c/transformed/jetified-play-services-basement-18.2.0/res/values-sv/values.xml",

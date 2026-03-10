@@ -12,7 +12,6 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
-import com.airbnb.lottie.LottieAnimationView;
 import com.aitube.seogenerator.R;
 import com.google.android.gms.ads.AdView;
 import com.google.android.material.appbar.AppBarLayout;
@@ -49,9 +48,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FrameLayout loadingLayout;
 
   @NonNull
-  public final LottieAnimationView lottieLoading;
-
-  @NonNull
   public final TextInputLayout tilTopic;
 
   @NonNull
@@ -67,9 +63,8 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull AppBarLayout appBarLayout, @NonNull AdView bannerAdView,
       @NonNull MaterialButton btnGenerateSeo, @NonNull MaterialButton btnGenerateShorts,
       @NonNull MaterialButton btnWatchAd, @NonNull TextInputEditText etTopic,
-      @NonNull FrameLayout loadingLayout, @NonNull LottieAnimationView lottieLoading,
-      @NonNull TextInputLayout tilTopic, @NonNull Toolbar toolbar, @NonNull TextView tvLimitInfo,
-      @NonNull TextView tvLoadingText) {
+      @NonNull FrameLayout loadingLayout, @NonNull TextInputLayout tilTopic,
+      @NonNull Toolbar toolbar, @NonNull TextView tvLimitInfo, @NonNull TextView tvLoadingText) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
     this.bannerAdView = bannerAdView;
@@ -78,7 +73,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnWatchAd = btnWatchAd;
     this.etTopic = etTopic;
     this.loadingLayout = loadingLayout;
-    this.lottieLoading = lottieLoading;
     this.tilTopic = tilTopic;
     this.toolbar = toolbar;
     this.tvLimitInfo = tvLimitInfo;
@@ -154,12 +148,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.lottieLoading;
-      LottieAnimationView lottieLoading = ViewBindings.findChildViewById(rootView, id);
-      if (lottieLoading == null) {
-        break missingId;
-      }
-
       id = R.id.tilTopic;
       TextInputLayout tilTopic = ViewBindings.findChildViewById(rootView, id);
       if (tilTopic == null) {
@@ -185,8 +173,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((CoordinatorLayout) rootView, appBarLayout, bannerAdView,
-          btnGenerateSeo, btnGenerateShorts, btnWatchAd, etTopic, loadingLayout, lottieLoading,
-          tilTopic, toolbar, tvLimitInfo, tvLoadingText);
+          btnGenerateSeo, btnGenerateShorts, btnWatchAd, etTopic, loadingLayout, tilTopic, toolbar,
+          tvLimitInfo, tvLoadingText);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
