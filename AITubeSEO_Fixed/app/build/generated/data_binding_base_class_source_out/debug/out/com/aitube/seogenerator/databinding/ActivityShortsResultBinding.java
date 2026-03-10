@@ -4,6 +4,7 @@ package com.aitube.seogenerator.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -13,7 +14,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.aitube.seogenerator.R;
-import com.google.android.gms.ads.AdView;
 import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
@@ -24,7 +24,7 @@ public final class ActivityShortsResultBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final AdView bannerAdView;
+  public final FrameLayout bannerAdContainer;
 
   @NonNull
   public final MaterialButton btnShareAll;
@@ -39,10 +39,10 @@ public final class ActivityShortsResultBinding implements ViewBinding {
   public final TextView tvTopic;
 
   private ActivityShortsResultBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull AdView bannerAdView, @NonNull MaterialButton btnShareAll,
+      @NonNull FrameLayout bannerAdContainer, @NonNull MaterialButton btnShareAll,
       @NonNull RecyclerView recyclerTitles, @NonNull Toolbar toolbar, @NonNull TextView tvTopic) {
     this.rootView = rootView;
-    this.bannerAdView = bannerAdView;
+    this.bannerAdContainer = bannerAdContainer;
     this.btnShareAll = btnShareAll;
     this.recyclerTitles = recyclerTitles;
     this.toolbar = toolbar;
@@ -76,9 +76,9 @@ public final class ActivityShortsResultBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bannerAdView;
-      AdView bannerAdView = ViewBindings.findChildViewById(rootView, id);
-      if (bannerAdView == null) {
+      id = R.id.bannerAdContainer;
+      FrameLayout bannerAdContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bannerAdContainer == null) {
         break missingId;
       }
 
@@ -106,7 +106,7 @@ public final class ActivityShortsResultBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityShortsResultBinding((CoordinatorLayout) rootView, bannerAdView,
+      return new ActivityShortsResultBinding((CoordinatorLayout) rootView, bannerAdContainer,
           btnShareAll, recyclerTitles, toolbar, tvTopic);
     }
     String missingId = rootView.getResources().getResourceName(id);

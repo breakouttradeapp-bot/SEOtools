@@ -13,7 +13,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.aitube.seogenerator.R;
-import com.google.android.gms.ads.AdView;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textfield.TextInputEditText;
@@ -30,7 +29,7 @@ public final class ActivityMainBinding implements ViewBinding {
   public final AppBarLayout appBarLayout;
 
   @NonNull
-  public final AdView bannerAdView;
+  public final FrameLayout bannerAdContainer;
 
   @NonNull
   public final MaterialButton btnGenerateSeo;
@@ -60,14 +59,14 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView tvLoadingText;
 
   private ActivityMainBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull AppBarLayout appBarLayout, @NonNull AdView bannerAdView,
+      @NonNull AppBarLayout appBarLayout, @NonNull FrameLayout bannerAdContainer,
       @NonNull MaterialButton btnGenerateSeo, @NonNull MaterialButton btnGenerateShorts,
       @NonNull MaterialButton btnWatchAd, @NonNull TextInputEditText etTopic,
       @NonNull FrameLayout loadingLayout, @NonNull TextInputLayout tilTopic,
       @NonNull Toolbar toolbar, @NonNull TextView tvLimitInfo, @NonNull TextView tvLoadingText) {
     this.rootView = rootView;
     this.appBarLayout = appBarLayout;
-    this.bannerAdView = bannerAdView;
+    this.bannerAdContainer = bannerAdContainer;
     this.btnGenerateSeo = btnGenerateSeo;
     this.btnGenerateShorts = btnGenerateShorts;
     this.btnWatchAd = btnWatchAd;
@@ -112,9 +111,9 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.bannerAdView;
-      AdView bannerAdView = ViewBindings.findChildViewById(rootView, id);
-      if (bannerAdView == null) {
+      id = R.id.bannerAdContainer;
+      FrameLayout bannerAdContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bannerAdContainer == null) {
         break missingId;
       }
 
@@ -172,7 +171,7 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((CoordinatorLayout) rootView, appBarLayout, bannerAdView,
+      return new ActivityMainBinding((CoordinatorLayout) rootView, appBarLayout, bannerAdContainer,
           btnGenerateSeo, btnGenerateShorts, btnWatchAd, etTopic, loadingLayout, tilTopic, toolbar,
           tvLimitInfo, tvLoadingText);
     }

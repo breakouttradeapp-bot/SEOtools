@@ -8,11 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.aitube.seogenerator.R
 import com.aitube.seogenerator.databinding.ActivityShortsResultBinding
 import com.aitube.seogenerator.databinding.ItemShortsTitleBinding
 import com.aitube.seogenerator.models.ShortsTitles
 import com.aitube.seogenerator.utils.*
-import com.google.android.gms.ads.AdRequest
 
 class ShortsResultActivity : AppCompatActivity() {
 
@@ -24,28 +24,24 @@ class ShortsResultActivity : AppCompatActivity() {
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "🎬 Viral Shorts Titles"
+        supportActionBar?.title = "Viral Shorts Titles"
 
-        val shorts: ShortsTitles? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        val shorts: ShortsTitles? = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
             intent.getParcelableExtra(Constants.EXTRA_SHORTS_TITLES, ShortsTitles::class.java)
-        } else {
-            @Suppress("DEPRECATION")
-            intent.getParcelableExtra(Constants.EXTRA_SHORTS_TITLES)
-        }
+        else @Suppress("DEPRECATION") intent.getParcelableExtra(Constants.EXTRA_SHORTS_TITLES)
 
         val topic = intent.getStringExtra(Constants.EXTRA_TOPIC).orEmpty()
-        binding.tvTopic.text = if (topic.isNotEmpty()) "📌 Topic: $topic" else "📌 Generated Titles"
+        binding.tvTopic.text = if (topic.isNotEmpty()) "Topic: $topic" else "Generated Titles"
 
         val titles = shorts?.titles?.filter { it.isNotBlank() } ?: emptyList()
         setupRecycler(titles)
 
-        try {
-            binding.bannerAdView.loadAd(AdRequest.Builder().build())
-        } catch (e: Exception) { /* non-fatal */ }
+        // Load banner programmatically — never crashes
+        AdHelper.loadBanner(this, binding.bannerAdContainer, getString(R.string.admob_banner_id))
 
         val shareContent = titles.mapIndexed { i, t -> "${i + 1}. $t" }.joinToString("\n")
         binding.btnShareAll.setOnClickListener {
-            if (shareContent.isNotBlank()) shareText("🚀 Viral YouTube Shorts Titles:\n\n$shareContent")
+            if (shareContent.isNotBlank()) shareText("Viral YouTube Shorts Titles:\n\n$shareContent")
             else Toast.makeText(this, "Nothing to share", Toast.LENGTH_SHORT).show()
         }
     }
@@ -57,10 +53,7 @@ class ShortsResultActivity : AppCompatActivity() {
         }
     }
 
-    override fun onSupportNavigateUp(): Boolean {
-        onBackPressedDispatcher.onBackPressed()
-        return true
-    }
+    override fun onSupportNavigateUp(): Boolean { onBackPressedDispatcher.onBackPressed(); return true }
 }
 
 class TitlesAdapter(
@@ -70,7 +63,7 @@ class TitlesAdapter(
 
     inner class VH(val binding: ItemShortsTitleBinding) : RecyclerView.ViewHolder(binding.root)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): VH =
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         VH(ItemShortsTitleBinding.inflate(LayoutInflater.from(parent.context), parent, false))
 
     override fun onBindViewHolder(holder: VH, position: Int) {
@@ -82,5 +75,5 @@ class TitlesAdapter(
         try { holder.itemView.animateIn(minOf(position * 80L, 600L)) } catch (e: Exception) {}
     }
 
-    override fun getItemCount(): Int = titles.size
+    override fun getItemCount() = titles.size
 }

@@ -55,13 +55,11 @@
             android:background="@color/surface"
             android:elevation="4dp">
 
-            <com.google.android.gms.ads.AdView
-                xmlns:ads="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/bannerAdView"
+                        <FrameLayout
+                android:id="@+id/bannerAdContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                ads:adSize="BANNER"
-                ads:adUnitId="@string/admob_banner_id" />
+                android:layout_marginTop="8dp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnShareAll"

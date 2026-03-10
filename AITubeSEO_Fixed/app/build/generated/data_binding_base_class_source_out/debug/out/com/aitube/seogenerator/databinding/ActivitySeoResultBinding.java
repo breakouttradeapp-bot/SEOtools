@@ -4,6 +4,7 @@ package com.aitube.seogenerator.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,7 +13,6 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.aitube.seogenerator.R;
-import com.google.android.gms.ads.AdView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
@@ -24,7 +24,7 @@ public final class ActivitySeoResultBinding implements ViewBinding {
   private final CoordinatorLayout rootView;
 
   @NonNull
-  public final AdView bannerAdView;
+  public final FrameLayout bannerAdContainer;
 
   @NonNull
   public final MaterialButton btnCopyDesc;
@@ -72,7 +72,7 @@ public final class ActivitySeoResultBinding implements ViewBinding {
   public final TextView tvTopic;
 
   private ActivitySeoResultBinding(@NonNull CoordinatorLayout rootView,
-      @NonNull AdView bannerAdView, @NonNull MaterialButton btnCopyDesc,
+      @NonNull FrameLayout bannerAdContainer, @NonNull MaterialButton btnCopyDesc,
       @NonNull MaterialButton btnCopyHashtags, @NonNull MaterialButton btnCopyTags,
       @NonNull MaterialButton btnCopyTitle, @NonNull MaterialButton btnShareAll,
       @NonNull MaterialCardView cardDescription, @NonNull MaterialCardView cardHashtags,
@@ -80,7 +80,7 @@ public final class ActivitySeoResultBinding implements ViewBinding {
       @NonNull Toolbar toolbar, @NonNull TextView tvDescription, @NonNull TextView tvHashtags,
       @NonNull TextView tvTags, @NonNull TextView tvTitle, @NonNull TextView tvTopic) {
     this.rootView = rootView;
-    this.bannerAdView = bannerAdView;
+    this.bannerAdContainer = bannerAdContainer;
     this.btnCopyDesc = btnCopyDesc;
     this.btnCopyHashtags = btnCopyHashtags;
     this.btnCopyTags = btnCopyTags;
@@ -125,9 +125,9 @@ public final class ActivitySeoResultBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.bannerAdView;
-      AdView bannerAdView = ViewBindings.findChildViewById(rootView, id);
-      if (bannerAdView == null) {
+      id = R.id.bannerAdContainer;
+      FrameLayout bannerAdContainer = ViewBindings.findChildViewById(rootView, id);
+      if (bannerAdContainer == null) {
         break missingId;
       }
 
@@ -221,9 +221,10 @@ public final class ActivitySeoResultBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivitySeoResultBinding((CoordinatorLayout) rootView, bannerAdView, btnCopyDesc,
-          btnCopyHashtags, btnCopyTags, btnCopyTitle, btnShareAll, cardDescription, cardHashtags,
-          cardTags, cardTitle, toolbar, tvDescription, tvHashtags, tvTags, tvTitle, tvTopic);
+      return new ActivitySeoResultBinding((CoordinatorLayout) rootView, bannerAdContainer,
+          btnCopyDesc, btnCopyHashtags, btnCopyTags, btnCopyTitle, btnShareAll, cardDescription,
+          cardHashtags, cardTags, cardTitle, toolbar, tvDescription, tvHashtags, tvTags, tvTitle,
+          tvTopic);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

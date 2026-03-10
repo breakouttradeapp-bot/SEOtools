@@ -3273,7 +3273,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
-id bannerAdView
+id bannerAdContainer
 id barrier
 id baseline
 id beginOnFirstDraw

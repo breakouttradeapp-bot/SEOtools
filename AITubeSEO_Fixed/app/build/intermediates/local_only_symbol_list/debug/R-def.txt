@@ -53,7 +53,7 @@ id action_dark_mode
 id action_history
 id action_privacy
 id appBarLayout
-id bannerAdView
+id bannerAdContainer
 id btnClearHistory
 id btnCopy
 id btnCopyDesc
