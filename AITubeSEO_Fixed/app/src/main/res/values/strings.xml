@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI Tube SEO</string>
+
+    <!--
+    ════════════════════════════════════════════════════════
+    ⚠️  REPLACE THESE WITH YOUR REAL ADMOB IDs
+    ════════════════════════════════════════════════════════
+    App ID       → from AdMob Dashboard > App Settings
+    Banner ID    → from AdMob Dashboard > Ad Units
+    Interstitial → from AdMob Dashboard > Ad Units
+    Rewarded     → from AdMob Dashboard > Ad Units
+
+    TEST IDs (safe for development, no real revenue):
+    App ID:          ca-app-pub-3940256099942544~3347511713
+    Banner:          ca-app-pub-3940256099942544/6300978111
+    Interstitial:    ca-app-pub-3940256099942544/1033173712
+    Rewarded:        ca-app-pub-3940256099942544/5224354917
+    ════════════════════════════════════════════════════════
+    -->
+
+    <!-- AdMob App ID: REPLACE WITH YOUR REAL APP ID -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+
+    <!-- AdMob Ad Unit IDs: REPLACE WITH YOUR REAL AD UNIT IDs -->
+    <string name="admob_banner_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="admob_interstitial_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_rewarded_id">ca-app-pub-3940256099942544/5224354917</string>
+
+</resources>

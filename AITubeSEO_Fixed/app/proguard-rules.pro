@@ -1,0 +1,6 @@
+-keep class com.aitube.seogenerator.models.** { *; }
+-keep class com.google.android.gms.ads.** { *; }
+-dontwarn com.google.android.gms.**
+-keep class retrofit2.** { *; }
+-keepattributes Signature
+-keepattributes *Annotation*
